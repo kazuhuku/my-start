@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5">
+    <meta charset="UTF-8">
+    <meta name="description" content="wedデザイナーを目指してhtmlとcssの勉強中">
+    <mete name="keywords" content="web,勉強">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sawarabi+Mincho&display=swap"
+            rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/5d7293c0ee.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/css-guide.css">
+        <link rel="stylesheet" href="../css/device.css">
+        <title>WEBサイト作成の勉強を振り返るサイトだよ</title>
+</head>
+
+<body>
+    <header class="scroll">
+        <div class="inner">
+
+            
+            <!-- <div id="nav-toggle" class="sp"> -->
+                <!-- <div> -->
+                    <!-- <span></span> -->
+                    <!-- <span></span> -->
+                    <!-- <span></span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+
+
+            <nav class="header-nav-scroll">
+                <ul>
+                    <li class="btn"><a href="#about">CSS</a></li>
+                    <li class="btn"><a href="#work">styleについて</a></li>
+                    <li class="btn"><a href="#code">基本的なコード</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div id="main-img">
+        <section id="css-title">
+        </section>
+    </div>
+
+    <section id="intro">
+        <div class="inner">
+            <p>
+                ここではCSSについての説明や実際にどうかわるか？<br class="sp-br"><br>
+                少しコードを交えて話しをしたいと思います。<br class="sp-br"><br>
+                HTMLだけではできないことを変化を通して見て<br class="sp-br">いきましょう♪
+            </p>
+
+            <h2>CSSって？</h2>
+            <P>
+                CSSとは略称で正式には
+                <strong><ruby>
+                        <rb>Cascading Style Sheets</rb>
+                        <rt>カスケーディングスタイルシート</rt>
+                    </ruby></strong>と<br class="sp-br">
+                呼ばれています。<span class="sp-block"></span><br>
+                主に<strong class="color">レイアウトや装飾…つまり見た目を変えること</strong>を得意としています。<br class="sp-br"><br>
+                最初にHTMLが
+                <strong class="color">家の骨組みや家具を置く</strong>とお話したことを覚えていますか？<br class="sp-br">
+                <strong class="color">CSSでは置いた家具の配置を替えて模様替えをしよう!!</strong>という感じです。<br class="sp-br"><br>
+                ここからは実際にどう変化するのかを見ながら進めていこうと思います!
+            </P>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="inner">
+            <h2>CSSは何が出来るの？</h2>
+            <figure class="css-img"></figure>
+            <div class="css-text">
+                <p>
+                    HTMLはテキストや見出しを決まった大きさで出したり、簡単な改行程度は可能です。<br class="sp-br"><br>
+                    ですが、色を変えたり・<br class="sp-br">
+                    行間の高さや隙間を変更するなど細かい変更は出来ません。<br class="sp-br"><br>
+                    まずはHTMLだけで出来る部分を見てみましょう!<br>
+
+                <div class="link-btn">
+                    <h1><a href="../pages/html-changes.html"><span class="color-w">比較してみよう！！
+                                <i class="fa-solid fa-arrow-right"></i></span></a></h1>
+                </div>
+
+
+                どうでしたか？<br class="sp-br">
+                HTMLだけで十分と思われるかも知れませんよね？<br class="sp-br"><br>
+                でも実際にこれだけでwedページを作っていくと<br class="sp-br">
+                大変ですし、物足りなさを感じるようになります。<br class="sp-br"><br>
+                この書き方をしてはいけないというルールも決まっているため、<br>
+                思うような大きさにならなかったり<br class="sp-br">
+                テキストや画像が収まらないなどHTMLだけでは<br class="sp-br">
+                やはり限界があります。<br class="sp-br"><br>
+                今見ているブラウザの背景やテキストもデフォルトでは白色と黒です。<br>
+                CSSで変更しています。
+                </p>
+            </div>
+
+            <div class="contents-blk">
+                <details>
+                    <summary>
+                        どうやって変更すればいいの？
+                    </summary>
+                    <p>
+                        ではCSSはどうやって<br class="sp-br">
+                        編集するのか見て<br class="sp-br">
+                        いきましょう!<br class="sp-br"><br>
+                        HTMLの中に<ruby>
+                            ＜style＞
+                            <rt>スタイル</rt>
+                        </ruby>
+                        と入力することでCSSを編集できるようになります。
+                    </p>
+
+                    <div class="peactice">
+                        <p>
+                            ＜style＞<br class="sp-br"><br>
+                            p {<br class="sp-br"><br>
+                            color: red;<br class="sp-br"><br>
+                            }<br class="sp-br"><br>
+                            ＜/style＞
+                            と入力します。そうすることで
+                        </p>
+                    </div>
+
+                    <p class="color-red">＜ｐ＞要素を含むテキストが赤色に変わります。</p>
+
+
+                    <div class="peactice">
+                        <p>今度は、</p>
+                        <p>
+                            ＜style＞<br class="sp-br"><br>
+                            p {<br class="sp-br"><br>
+                            background: red;<br class="sp-br"><br>
+                            }<br class="sp-br"><br>
+                            ＜/style＞
+                            と入力すると
+                        </p>
+                    </div>
+
+                    <p class="background-red">＜ｐ＞要素を含むテキストの背景が赤色に変わります。</p>
+
+                </details>
+
+                <h2>他には何が出来るの？</h2>
+                <div class="gimon-img">
+                </div>
+
+                <p>
+                    先ほどは基本的な色の変更を紹介しました。<br class="sp-br"><br>
+                    次はフォントの変更を<br class="sp-br">
+                    見てみましょう！<br>
+
+                <details>
+                    <summary>
+                        フォントって？
+                    </summary>
+                    <p>
+                        学校や仕事でwordを使ったことはありますか？<br class="sp-br"><br>
+                        フォントのサイズを変えたりテキストを明朝体やMSゴシックなどに変更すると<br class="sp-br">
+                        書体が変わります。<br class="sp-br"><br>
+                        フォントの変更もCSS側で管理しています。<br>
+                    </p>
+
+                    <div class="peactice">
+                        <p>
+                            ＜style＞<br class="sp-br"><br>
+                            p {<br class="sp-br"><br>
+                            font-family: フォント名;<br class="sp-br"><br>
+                            }<br class="sp-br"><br>
+                            ＜/style＞
+                            と入力します。そうすることで
+                        </p>
+                        <p>
+                            P要素を持つテキストに指定したフォントを表示できるようになります。<br class="sp-br">
+                            しかし、これだけでは表示されないことがあります。
+                        </p>
+                    </div>
+
+
+
+                    <p>
+                        各デバイスに使われているOSによって<br class="sp-br">
+                        <em class="em-color-g">「最初から入っている<br class="sp-br">日本語フォント」</em>が異なるからです。<br class="sp-br"><br>
+                        windows、mac、iPhoneやandroidそれぞれ<br class="sp-br">
+                        インストールされている<br class="sp-br">フォントが違うので<br>
+                        Windowsではゴシック体が入ってるけどmacには<br class="sp-br">インストールされてないので表示できない。<br class="sp-br"><br>
+                        PCには表示できるけど<br class="sp-br">スマホには使われていないフォントだから表示されない。<br class="sp-br"><br>
+                        というケースもあります。<span class="sp-block"></span>
+
+                        それを回避するために<br class="sp-br">
+                        それぞれのOSに対応した<br class="sp-br">フォントを複数入力します。
+                    </p>
+                </details>
+
+                <details>
+                    <div class="img-hatena"></div>
+                    <summary>
+                        他のデバイスで同じフォントは<br class="sp-br">使えないの？
+
+                    </summary>
+                    <p>
+                        インストールされていない物を表示させることはCssの力だけでは難しいです。<br class="sp-br"><br>
+                        でもやりようはあります。<br class="sp-br">
+                        それはGoogleの力を<br class="sp-br">お借りすることです!!<br>
+                        Googleが提供する<br class="sp-br">サービスには様々なものがあり、編集する際いつも<br class="sp-br">
+                        助けてもらっています。<br class="sp-br"><br>
+                        今回紹介するものは<br class="sp-br"><em class="em-color-w">Google Fonts</em>と呼ばれる<br class="sp-br">
+                        サービスです。<br class="sp-br"><br>
+                        これを使用することで<br class="sp-br">wed上であればどの<br class="sp-br">
+                        デバイスでも同じフォントが表示されるようになります。<span class="sp-block"></span><br>
+                        仕組みを説明すると<br class="sp-br"><strong>使いたいフォントをこの<br class="sp-br">サイトで読み込んでね？</strong>と
+                        <em class="em-color-w">Google Fonts</em>と<br>
+                        リンクさせることで表示可能な状態にしています。
+                    </p>
+
+                    <h3>公式サイトについて</h3>
+
+                    <p>
+                        Google Fontsには多くの<br class="sp-br">
+                        フォントが公開されています。<br class="sp-br"><br>
+                        気になる方は公式サイトで実際のフォントを確認してみてください!!<br class="sp-br"><br>
+                        英語表記ですが翻訳しなくてもフォントは表示されるのでフォントのみの確認もできます！
+                    </p>
+
+
+                    <div class="pc-link">
+                        <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">
+                            Google Fonts公式サイト</a>
+                        <i class="fa-solid fa-arrow-left"></i><span>ここをクリックすると公式サイトへ移れます！</span>
+                    </div>
+
+                    <div class="sp-link">
+                        <i class="fa-solid fa-arrow-down"></i><span>をクリックすると公式サイトへ移れます！</span>
+                        <span class="sp-block"></span>
+
+                        <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">
+                            Google Fonts公式サイト</a>
+
+                    </div>
+
+                    <p>
+                        使用したいフォントを<br class="sp-br">選んだ後、必要なコードが発行されます。<br class="sp-br">
+                        そのリンクをHTML側に<br class="sp-br">コピペすれば完了となります。<span class="sp-block"></span><br>
+                        ただし、<strong>webを介して<br class="sp-br">
+                        読み込んでいるので<br class="sp-br">オフライン下では機能しません。</strong><br class="sp-br"><br>
+                        なので<em class="em-color-w">Google Fonts</em>と<br class="sp-br">
+                        <em class="em-color-w">font-family</em>はセットで運用するのが無難です。
+                    </p>
+                </details>
+
+
+
+                <section id="work">
+                    <div class="inner">
+<h2>styleについて</h2>
+                        <p>
+                            <ruby>
+                                ＜style＞
+                                <rt>スタイル</rt>
+                            </ruby>
+                            を使うことで<br class="sp-br">個性的なサイトを作ることができるようになります。<br class="sp-br"><br>
+                            美味しいお店を探そうとして文字や写真が乱雑に配置されたサイトを見ても<br>
+                            何も伝わりませんよね？<span class="sp-block"></span><br>
+
+                            メインの料理はこれ。<br class="sp-br">味付けや値段はここ。と一目みてわかるように<br class="sp-br"><br>
+                            装飾し、配置することで何を伝えたいのか分かるサイトが出来上がるのです。
+                        </p>
+
+                        <div class="style-img"></div>
+
+                        <details>
+                            <summary>
+                                じゃあこれで編集できるね！
+                            </summary>
+                            <p>
+                                これでhtmlとcssを編集<br class="sp-br">できるようになりました!!<span class="sp-block"></span><br>
+                                でもこのやり方だと<br class="sp-br">2ページ、3ページと、<br class="sp-br">
+                                複数のhtmlを作った時に一つのhtmlに何度もstyleを記述しないといけません。<br class="sp-br"><br>
+                                そうなると大変です。<span class="sp-block"></span>時間も掛かるし、<br class="sp-br">
+                                htmlとcssがごちゃごちゃして分かり辛くなります。<br class="sp-br"><br>
+
+                                そのため、htmlの中にstyleを記述することは<br class="sp-br">
+                                まずありません。<span class="sp-block"></span><br>
+                                基本的には<strong>共通するcssはひとつのファイルに<br class="sp-br">まとめて管理し、
+                                必要なページには個別にcssを<br class="sp-br">作りHTMLに共有する。</strong><br>この方式が主流です。<span class="sp-block"></span>
+
+                                この方法は外部cssと<br class="sp-br">呼ばれています。<br class="sp-br"><br>
+                                外部と聞くと特殊な作業を想像しますが、難しいことはありません。<br class="sp-br">
+                                CSS用のフォルダーを<br class="sp-br">作成しHTMLにデーターが保存されている<br class="sp-br">フォルダーを読み込むよう指示するだけです。
+                            </p>
+                        </details>
+                    </div>
+
+                </section>
+                <section id="code">
+                    <div class="inner">
+
+                        <details>
+                            <summary>
+                                基本的なコードのまとめ
+                            </summary>
+                            <p>ここでは最後にコードをまとめていこうと思います。<br class="sp-br"><br>
+                                といっても使用する<br class="sp-br">
+                                コードは挙げきれないほど沢山あります。<span class="sp-block"></span><br>
+                                なので、今回は構成する中でも基礎として使うものを数個選んでみました。<br class="sp-br"><br>
+                                ここまでに例で挙げた<br class="sp-br">コードも基礎にあたるので書いて置きますね!
+                            </p>
+
+
+                            <div class="code-collection">
+
+                                <div class="wrap-blk">
+                                    <div class="contents-blk">
+                                        color=テキストカラーの変更
+                                        <p>
+                                            例 color: red;
+                                        <div class="example">テキストの色が変更される</div>
+                                        </p>
+                                    </div>
+
+                                    <div class="contents-blk">
+                                        background=背景のカラー変更又は画像を配置する
+                                        例 background: red;<div class="example">背景色が変更される
+                                        </div>
+                                        もしくはbackground: <br>url(画像や動画ファイルを指定);で<br>背景に動画や画像を配置できる
+                                    </div>
+
+                                    <div class="contents-blk">
+                                        font-family=フォントの種類を変更する
+                                        例 font-family: sans-serif system-ui;<div class="example">
+                                            これならゴシック体かもしくは<br>OS用uiフォントがでます</div>
+                                    </div>
+
+                                    <div class="contents-blk">
+                                        font-size=フォントの大きさを変更する
+                                        例 font-size: 数値とpxや%を入力する;
+                                        <div class="example">テキストの大きさが<br class="sp-br">変わる<br class="sp-br"><br>
+                                            (30pxにしてます)
+                                        </div>
+                                        </p>
+                                    </div>
+
+                                    <div class="contents-blk">
+                                        <p>
+                                            width=横幅の大きさを変更する<span class="sp-block"></span><br>
+                                            height=縦幅の大きさを変更する<span class="sp-block"></span><br>
+                                            padding=内部余白の<br class="sp-br">
+                                            大きさを変更する<span class="sp-block"></span><br>
+                                            margin=余白部分の<br class="sp-br">
+                                            大きさを変更する<span class="sp-block"></span><br>
+                                            font-size=フォントの<br class="sp-br">
+                                            大きさを変更する<br>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>
+                                ここにまとめたものは<br class="sp-br">
+                                本当に基礎部分ですが<br class="sp-br">
+                                まだまだ沢山あります。<br>
+                                興味がある方はぜひ、<br class="sp-br">
+                                調べてみてください。<br class="sp-br"><br>
+                                多くのサイトで紹介されています!<br>
+                            </p>
+                        </details>
+                </section>
+
+
+
+
+
+                <footer>
+                    <div id="link">
+                        <div class="link-btn"><a href="../index.html#works-list" onclick="goto_id">
+                                <i class="fa-solid fa-arrow-left"></i><span>ここをクリックするとページ案内へ移れます！</span></a>
+                        </div>
+                    </div>
+
+
+                    <nav id="go_home">
+                        <a href="../index.html" onclick="goto_id">
+                            <img src="../images/go_home_アイコン２.png" alt="ホームへ戻る">
+                        </a>
+
+                    </nav>
+                </footer>
+
+</body>
+
+</html>

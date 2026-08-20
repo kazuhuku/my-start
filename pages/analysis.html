@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="description" content="wedデザイナーを目指してhtmlとcssの勉強中">
+  <mete name="keywords" content="web,勉強">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5d7293c0ee.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/html-guide.css">
+    <link rel="stylesheet" href="../css/device.css">
+    <title>WEBサイト作成の勉強を振り返るサイトだよ</title>
+</head>
+
+<body>
+  <section id="analysis">
+    <div class="inner">
+      <div class="analysis-images">
+      </div>
+
+      <div class="analysis-text">
+        
+          
+         <h2>コードの読み解きやすさ</h2>
+          <p>
+          コードの読みやすさはとても重要です。<br>
+          コードのミスや書き忘れに気づかないといけません。<br>
+          メモ帳とVSCではここも違いが出ます。<br>
+          それぞれ画像で比較して見ましょう</p>
+          </p>
+        </div>
+
+<!-- スマホ画像 -->
+      <div class="analysis-images-sp">
+        <img src="../images/Efficiency.png">
+      </div>
+          <div class="analysis-text-sp">
+            
+          
+          <h2>コードの読み解きやすさ</h2>
+          <p>
+          コードの読みやすさはとても重要です。<br class="sp-br">
+          コードのミスや書き忘れに気づかないといけません。<br class="sp-br">
+          メモ帳とVSCではここも違いが出ます。<br class="sp-br">
+          それぞれ画像で比較して見ましょう。
+          </p>
+      </div>
+    </div>
+  
+
+  <div class="contents-blk">
+    <p>まずはメモ帳です。</p>
+    <img src="../images/!DOCTYPE html - メモ帳 .png">
+  </div>
+
+  <div class="contents-blk">
+    <p>次にVCSです。</p>
+    <img src="../images/VSC比較.png">
+  </div>
+  
+  <div class="analysis-text-pc">
+<p>
+      メモ帳はテキストがすべて黒で統一されているのに対し、<br>
+      VSCには要素やタグ等が<span class="b">青</span>・<span class="g">緑</span>・
+        <span class="orange">オレンジ</span>・<span
+        class="w">白</span>で色分けされてます。<br>
+      これは僕が色分けしたわけではありません。
+      VSCが分けてくれています。<br>
+      タグやテキスト、属性と呼ばれる要素を入力した後自動で振り分けてくれます。<br>
+      こうして比較するとやっぱりメモ帳は区分けされてないので分かり辛いですね。💦<br>
+    </p>
+
+    <p>
+      こうしてVSCで可視化すると、どこにタグや要素を置いているか分かりやすいですが…メモ帳は難しいですね。<br>
+      編集した本人はわかるかもしれませんが、もしもこれがお仕事ならどうでしょうか？<br>
+      コードの編集や修正は必ず作成者が行うとは限りません。作成を依頼して管理は別の方にお願いすることだってあります。<br>
+      それに不具合があった時、メモ帳では探し難いです。<br>
+      今回メモ帳に書いてある項目はかなり少ないです。それでもこの量です。<br>
+      これを見てどこが間違っていているのか探すのは一苦労します。<br>
+      この辺は、専用エディターの強みですね。
+    </p>
+
+
+    <p>
+      余談ですが割り振られているカラーは編集で変えることもできます。<br>
+      デフォルトでカラーが指定されているものを私は使用しています。<br>
+    </p>
+  </div>
+
+
+  <div class="analysis-text-sp">
+    <p>
+      メモ帳はテキストがすべて黒で統一されて<br class="sp-br">いるのに対し、
+      VSCには要素やタグ等が<br class="sp-br"><span class="b">青</span>・<span class="g">緑</span>・
+        <span class="orange">オレンジ</span>・<span
+        class="w">白</span>で色分けされてます。<br class="sp-br">
+      これは僕が色分けしたわけではありません。
+      VSCが分けてくれています。<br class="sp-br">
+      タグやテキスト、属性と呼ばれる要素を<br class="sp-br">入力した後自動で振り分けてくれます。<br class="sp-br">
+      こうして比較するとやっぱりメモ帳は区分けされてないので分かり辛いですね。💦<span class="sp-block"></span>
+    </p>
+
+    <p>
+      こうしてVSCで可視化すると、どこにタグや要素を置いているか分かりやすいですが…<br class="sp-br">
+      メモ帳は難しいですね。<br class="sp-br">
+      編集した本人はわかるかもしれませんが、<br class="sp-br">もしもこれがお仕事ならどうでしょうか？<br class="sp-br">
+      コードの編集や修正は必ず作成者が行うとは限りません。<br class="sp-br">
+      作成を依頼して管理は別の方にお願いすることだってあります。<br class="sp-br">
+      それに不具合があった時、メモ帳では探し難いです。<br class="sp-br">
+      今回メモ帳に書いてある項目はかなり少ないです。<br class="sp-br">それでもこの量です。<br class="sp-br">
+      これを見てどこが間違っていているのか探すのは一苦労します。<br class="sp-br">
+      この辺は、専用エディターの強みですね。
+    </p>
+
+
+    <p>
+      余談ですが割り振られているカラーは編集で変えることもできます。<br>
+      デフォルトでカラーが指定されているものを私は使用しています。<br>
+    </p>
+  </div>
+  </div>
+
+  </section>
+  
+</body>
+<footer id="back">
+  <div class="link-btn"><a href="html-guide.html">
+      <i class="fa-solid fa-arrow-left"></i><span>クリックすると戻れます！</span></a>
+  </div>
+</footer>
+
+</html>

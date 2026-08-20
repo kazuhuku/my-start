@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="description" content="wedデザイナーを目指してhtmlとcssの勉強中">
+  <meta name="keywords" content="web,勉強">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5d7293c0ee.js" crossorigin="anonymous"></script>
+
+
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/html-guide.css">
+    <link rel="stylesheet" href="../css/device.css">
+    <title>WEBサイト作成の勉強を振り返るサイトだよ</title>
+</head>
+
+<body>
+
+  <header class="scroll">
+    <div class="inner">
+
+     
+            <!-- <div id="nav-toggle" class="sp"> -->
+                <!-- <div> -->
+                    <!-- <span></span> -->
+                    <!-- <span></span> -->
+                    <!-- <span></span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+
+      <nav class="header-nav-scroll">
+        <ul>
+          <li class="btn"><a href="#about">HTMLとは</a></li>
+          <li class="btn"><a href="#work">作り方</a></li>
+          <li class="btn"><a href="#code">VSCについて</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div id="main-img">
+      <section id="intro-imags">
+      </section>
+    </div>
+    <section class="intro">
+      <div class="inner">
+        <p>
+          ここは<strong>HTML</strong>について<br class="sp-br">まとめているページに<br class="sp-br">なります！<span
+            class="sp-block"></span><br>
+          いろいろと説明ばかりに<br class="sp-br">なりますが、頑張って<br class="sp-br">説明してますので<br class="sp-br">よろしくお願いします。
+        </p>
+      </div>
+    </section>
+
+    <!-- <hr> -->
+
+
+    <section id="about">
+      <div class="inner">
+
+        <div class="ruby-text">
+          <h1><ruby>
+              <rb>HTML</rb>
+              <rt>エイチティエムエル</rt>
+            </ruby>について</h1>
+        </div>
+        <p>HTMLとは<br>
+          先ほども簡単に触れましたが大本となるWebページの骨組みや<br class="sp-br">構造を定義する言語です。<span class="sp-block"></span><br>
+          <strong>文章、見出し、リスト、<br class="sp-br">画像、リンク</strong>などを指定し、ブラウザや検索エンジンにページの内容を伝える役割を持っています。<span
+            class="sp-block"></span><br>
+          web上で機能するための<br class="sp-br">設計図として大切な役割があるということです。<br class="sp-br"><br>
+          大まかに分けるとこんな感じです。
+        </p>
+
+
+        <h2>私たちの目に見えること</h2>
+
+
+
+        <div class="work-text">
+          <img src="../images/views.png">
+
+          <ol>
+            <li>テキスト…文章です。<br class="sp-br">今こうして見てもらっていますね。</li>
+            <li>メディア…画像や動画・音楽です。<br class="sp-br">通販サイトとかで商品の紹介や説明に<br class="sp-br">よく使われていますね。</li>
+            <li>リンク…urlをクリックすると関連ページに<br class="sp-br">移りますよね？これは画像にも適応できます。</li>
+            <li>フォーム…入力欄です。<br class="sp-br">名前やメールアドレスを入力したりログインを求められた時パスワードを入れますよね？<br class="sp-br"><br>
+              あの箱に書き込めるようにしています。</li>
+          </ol>
+
+          <h2>私達に見えない部分</h2>
+
+          <img src="../images/ChatGPT Image 2026年6月22日 19_33_48.png">
+
+
+          <p>今度はwedページでは表示されないけど、<br class="sp-br">読み込ませることで有利になる部分の解説です。
+          </p>
+
+          <ol>
+            <li>キーワード設定…これを設定することでアクセス<br class="sp-br">しやすいサイトが作れます。<br class="sp-br"><br>
+            </li>
+
+            <li>Googleのサービスとリンクさせる…これはまたCSSで説明しますがPCやスマホでは使用できるテキストフォントが違います。<br class="sp-br"><br>
+              なので、サイトのイメージが崩れないようにwed上でフォントを統一する必要があります。<br>
+              入れなくても動きますがイメージ一つで意外と印象が変わるので侮れません。<br>
+            </li>
+
+            <li>特定の外部ファイルを読み込む…<strong>CSS</strong>や<strong>JavaScript</strong>はHTMLに書いても動きますが、<br class="sp-br"><br>
+              基本的にファイルを分けます。<br class="sp-br"><br>
+              そしてJavaScriptは自分で作ることも出来ますが、GoogleサービスのようにJavaScriptを外部サイトから持ってくることも出来ます。<br>
+            </li>
+
+            <li>必要な所にタグやIDを付ける…<br class="sp-br">ここは特に大事です。CSSとJavaScriptに<br
+                class="sp-br">仕事をしてもらうために名札やニックネームを付けてあげます。<br>
+            </li>
+          </ol>
+        </div>
+
+
+        <details>
+          <summary>見えない部分がないとどうなるの？</summary>
+          <p>
+            キーワードがないと、<br class="sp-br">検索しても結果に表示され辛くなります。<span class="sp-block"></span><br class="sp-br"><br>
+            検索の優位性が変わるのは結構大事です。<br class="sp-br"><br>
+            例えば温泉旅行に行くとして、温泉だけで検索するとたくさん候補が出てきます。<br class="sp-br"><br>
+            九州で観光もしたいな？と考えていたのに他の都道府県の表示が多く、探してる九州の候補が出てこないとします。
+            <span class="sp-block"></span><br>
+            ここに、大分や鹿児島と<br class="sp-br">検索ワードを加えると<br class="sp-br">大分県や鹿児島県が優先的に検索候補に表示されます。<br class="sp-br"><br>
+            キーワードを設定していれば、検索上位に表示されるのでアクセスが増える。<br class="sp-br">というわけです。<span class="sp-block"></span><br>
+          </p>
+
+          <p>
+            もう一つ重要なのは<br class="sp-br">タグとIDです。<br class="sp-br">
+            先ほど、名札や<br class="sp-br">ニックネームを付けると<br class="sp-br">
+            紹介しました。<br class="sp-br"><br>
+            テキストや見出しなど、<br class="sp-br">皆それぞれに決まった名前を持っています。<span class="sp-block"></span><br>
+            ですが、名前だけでは<br class="sp-br"><strong>CSS</strong>や<strong>JavaScript</strong>で<br class="sp-br">動かしたい時に、<br
+              class="sp-br">
+            <em class="em-color-g">同じ名前同士に影響してしまいます。</em><br class="sp-br"><br>
+            同じ名前のAが全部赤色になった。<br class="sp-br">アニメーションでAだけ<br class="sp-br">
+            動かしたいのにAがいる<br class="sp-br">部屋ごと動いてしまった。<br>
+            といった具合に思ったように指示出来なくなります。<span class="sp-block"></span><br>
+            それを避けるために、<br class="sp-br">君はテキストの田中くん。タイトルの君には動いて<br class="sp-br">欲しいからアニメさん。<br
+              class="sp-br"><br>こうやって役割が何なのか分かりやすくしてあげます。<br class="sp-br">
+            こうすることで、<strong>CSS</strong>や<strong>JavaScript</strong>は名前と名札が一緒のこの人と仕事するんだ！となります。<span
+              class="sp-block"></span><br>
+
+            ここを怠ると<strong>CSS</strong>や<strong>JavaScript</strong>は迷子になり大雑把にページ全体を変えてしまったり思ったように<br
+              class="sp-br">動かないと言った不具合が起きてしまうのです。
+          </p>
+
+
+          <p>
+            長くなっていましたね💦<br>
+            少なくてもここでは、
+          <ol>
+            <li><em class="em-color-g">後々整理するためにニックネームや名札を付けてあげること。</em></li>
+            <li><em class="em-color-g">配置したい物を置けること。</em></li>
+            <li><em class="em-color-g">検索しやすいようにキーワードを考えてあげること。</em></li>
+            これだけでも覚えてもらえると嬉しいです。
+            </p>
+          </ol>
+
+        </details>
+      </div>
+    </section>
+    <!-- <hr> -->
+
+    <section id="work">
+      <div class="inner">
+        <h2>編集するには？</h2>
+        <p class="memo">
+          じゃあ、自分で作りたい<br class="sp-br">けど色々ソフトとか高価な機能がついたPCがいるん<br class="sp-br">でしょう？<br class="sp-br">と
+          思われると思います。<br class="sp-br"><br>
+          そんなことはありません。<br class="sp-br">PCに最初から入っているメモ帳機能を使うことで
+          wedページを作ることが<br class="sp-br">できます。<span class="sp-block"></span><br>
+          確かにコードやHTML要素など細かな部分はありますが、内容を理解していれば<br class="sp-br">メモ帳に
+          記述し保存先をhtmlやcssで書き出すことで制作できます。<br class="sp-br"><br>
+          試しにメモ帳で前半部分を同じように記述してみました。<br>
+        </p>
+
+<!-- サンプル画像（srcのパスはお持ちの画像ファイル名に変更してください） -->
+  <img class="zoomable-img" src="../images/!DOCTYPE html - メモ帳 .png">
+
+  <!-- 拡大表示用モーダル -->
+  <div class="modal-overlay" id="imageModal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-img" id="modalImg" alt="拡大画像">
+  </div>
+          
+          <!-- <img src="../images/!DOCTYPE html - メモ帳 .png"> -->
+        
+
+        <p>
+          どうでしたか？<br class="sp-br"><br>メモ帳でこんなことが<br class="sp-br">
+          出来るなんて意外だった<br class="sp-br">でしょう？<br class="sp-br"><br>
+          と言っても、仕事では<br class="sp-br">おそらくメモ帳で編集は<br class="sp-br">していません。<br class="sp-br"><br>
+          大抵は<ruby>WordPress<rt>ワードプレス</rt></ruby>や<br class="sp-br">
+          <ruby>Visual Studio Code<rt>ビジュアルスタジオコード</rt></ruby>
+          を<br class="sp-br">使っています。
+        </p>
+
+
+        <details>
+          <summary>メモ帳はダメなの？</summary>
+
+          <P>
+            誤解がないように言うと、メモ帳で作るのが悪い。<br class="sp-br">というわけではありません。<br class="sp-br"><br>
+            メモ帳で作ってもちゃんと動きます。<br class="sp-br">安心してください。<span class="sp-block"></span><br>
+            先ほど挙げた二つの<br class="sp-br">はメモ帳には無い違いがあるんです。<br class="sp-br"><br>
+            <ruby>WordPress<rt>ワードプレス</rt></ruby>は
+            <br class="sp-br"><strong><em class="em-color-g">コードを知らなくても
+                サイトやホームページを作れるソフトです。</em></strong><br class="sp-br"><br>
+            ここでは簡単にメリットとデメリットだけ説明します。<span class="sp-block"></span><br>
+
+          <ol>
+            メリット
+            <li>知識がなくても簡単にブログやサイトを<br class="sp-br">作れる。</li>
+            <li>レイアウトが準備してあるので選んで使える。</li>
+            <li>アップロードするためのサーバーがあるので<br class="sp-br">すぐにwebへ公開出来る。</li>
+          </ol>
+
+          <ol>
+            デメリット(あくまで個人の感想です)
+            <li>お金が掛かる…ソフトは無料ですが<br class="sp-br">サーバー代などは有料です。<br class="sp-br">安くて月額1000～2000円位</li>
+            <li>WordPressのサーバーに不具合や更新があると影響が出る</li>
+            <li>セキュリティーの安全面…Visual Studio Codeと違いこちらは外部の管理アプリなので<br class="sp-br">ハッキングの心配がある。<br class="sp-br">
+              (これに関してはバックアップと更新さえ<br class="sp-br">怠らないなら問題ない)
+            </li>
+          </p>
+          </ol>
+          
+
+          <p>というのがWordPressです。<br class="sp-br"><br>
+            次はVisual Studio Codeの解説と、なぜメモ帳を使わないのか。<br>
+            順番にみていきましょう！</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- <hr> -->
+    <section id="code">
+      <div class="inner">
+        <h2><strong><ruby>
+              Visual Studio Code
+              <rt>ビジュアルスタジオコード</rt>
+            </ruby></strong>について</h2>
+        <p>
+          <strong><ruby>
+              Visual Studio Code
+              <rt>ビジュアルスタジオコード</rt>
+            </ruby></strong><strong><br class="sp-br">（以降はvscと略します）</strong><br>
+          と呼ばれるオープンソースのコードエディターが<br class="sp-br">あります。<br class="sp-br"><br>
+          ありがたいことに無料で<br class="sp-br">
+          誰でもダウンロードできます。<br class="sp-br">
+          Microsoftが開発したツールでWindows、macOS、Linuxといった大抵のOSで<br>
+          編集可能となっています。<br class="sp-br"><br>
+          オープンソースについての説明は割愛しますが、ここでは企業だけでなく個人も使える便利なソフトと<br class="sp-br">考えてください。<br class="sp-br"><br>
+          ではVSCは何ができるのか？<br class="sp-br">メモ帳との大きな違いを<br class="sp-br">考えてみました。
+        </p>
+        <ol class="text-big">
+
+          <li><a href="work.html" target="_self">作業のしやすさ</a></li>
+          <li><a href="analysis.html" target="_self">コードの読み解きやすさ</a></li>
+          <li><a href="use.html" target="_self">扱いやすいこと</a></li>
+
+        </ol>
+        <p>
+          この3つを私なりに説明しやすいように分けてみました!!<br class="sp-br"><br>
+          ひとつずつ解説したいと<br class="sp-br">思います!<br class="sp-br">
+          それぞれ解説が表示されるのでクリックして確認してください。
+        </p>
+      
+
+      <p>
+        このページについては以上になります！！<br class="sp-br"><br>
+        説明不足なところもあると思いますがHTMLは、<br class="sp-br">どう言うものなのかを理解していただければと<br>
+        思います！！<br class="sp-br"><br>
+        是非、CSSやJavaScriptの記事も見てください!
+      </p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+  <footer>
+    <div id="link">
+      <div class="link-btn"><a href="../index.html#works-list">
+          <i class="fa-solid fa-arrow-left"></i><span>ここをクリックするとページ案内へ移れます！</span></a>
+      </div>
+    </div>
+
+
+    <nav id="go_home">
+      <a href="../index.html">
+        <img src="../images/go_home_アイコン２.png" alt="ホームへ戻る">
+      </a>
+
+    </nav>
+  </footer>
+
+
+
+  
+
+  <script src="../JavaScript.css/JavaScript_1.js"></script>
+
+
+
+
+
+
+
+
+
+  
+
+
+</body>
+
+</html>
