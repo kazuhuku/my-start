@@ -1,0 +1,331 @@
+@charset "UTF-8";
+
+
+.sp,
+.sp-text,
+.sp-br, 
+.sp-block,
+.feature-sp-image,
+.sp-h2,
+.time-text-sp,
+.analysis-images-sp,
+.analysis-text-sp,
+.sp-link {
+    display: none;
+}
+
+
+/* -------------------
+共通
+------------------- */
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #101820;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #a8c7fa;
+}
+
+
+
+h1,
+h2 {
+    letter-spacing: 0.2em;
+}
+
+h2 {
+    color: white;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+strong {
+    color: white;
+}
+
+ruby {
+    color: white;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+hr {
+    border: none;
+    border-top: 10px double #fff;
+}
+
+
+#back {
+    font-size: 30px;
+    color: #00d4ff;
+}
+
+
+
+.link-btn :hover {
+    color: #a3e635;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+
+.contents-blk details {
+    color: #fff;
+}
+
+.contents-blk summary {
+    font-size: 3rem;
+}
+
+.contents-blk ol,
+p {
+    color: #a8c7fa;
+}
+
+details :active {
+    color: palegoldenrod;
+}
+
+
+/* -------------------
+ヘッダー
+------------------- */
+.hero-title {
+    background: url(../images/挨拶３.png) center top / cover no-repeat;
+    width: 80%;
+    height: 700px;
+    padding: 50px 80px 50px;
+    margin: 76px 100px 10px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    background: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 3px -3px rgba(0, 0, 0, 0.1);
+}
+
+.scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    z-index: 10;
+}
+
+.header-nav-scroll ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.header-nav-scroll .btn a {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #00d4ff;
+    padding: 10px 20px;
+    border: 1px solid #00d4ff;
+    border-radius: 30px;
+
+}
+
+.header-nav-scroll .btn a:hover {
+    transition: 0.3s;
+    background-color: #00d4ff;
+    color: white;
+}
+
+.hero-title {
+    animation: RightToLeft 2s;
+}
+
+@keyframes RightToLeft {
+    0% {
+        width: 0%;
+        background: #000;
+        
+    }
+
+    100% {
+        width: 80%;
+        background: #fff;
+        
+    }
+}
+
+
+
+
+/* メモ用紙 */
+/* -------------------
+最初のリンク先位置を決めてるけど変えるかも
+------------------- */
+
+#about {
+    scroll-margin-top: 90px;
+}
+
+#works {
+    scroll-margin-top: 90px;
+}
+
+
+/*------------------- 
+学習したこと 
+-------------------*/
+
+.feature-image {
+    background: url(../images/work.png) no-repeat center bottom / cover;
+    height: 400px;
+    width: 800px;
+    position: relative;
+}
+
+.feature-image h1 {
+    position: absolute;
+    
+    color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+
+.feature-text h1 {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 0);
+    margin: 320px 0 0 0;
+    transition: background-color 1s, color 1s;
+}
+
+
+.feature-image:hover h1 {
+    color: white;
+    background-color: #a8c7fa;
+    transition: background-color 1s, color 1s;
+}
+
+.feature-text h2 {
+    color: #a8c7fa;
+}
+
+.feature-image .btn a:hover {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1px 1px 2px 2px;
+    border-radius: 30px;
+    color: #1a2b3c;
+
+}
+
+/* -------------------
+メニュー
+------------------- */
+
+
+.another-page .btn a {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    color: aquamarine;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 1px solid #00d4ff;
+    border-radius: 30px;
+}
+
+.another-page .btn a:hover {
+    transition: 1s;
+    background-color: #00d4ff;
+    color: white;
+}
+
+
+/* -------------------
+メッセージ
+------------------- */
+
+
+
+
+
+
+
+
+
+/* -------------------
+フッター
+------------------- */
+
+footer {
+    margin-top: 100px;
+    padding: 40px;
+    text-align: center;
+    background: #101820;
+
+}
+
+#link {
+    font-size: 30px;
+    margin: 0 0 30px;
+}
+
+
+
+#go_home img {
+    width: 300px;
+    height: auto;
+    transition: .3s;
+}
+
+#go_home img:hover {
+    transform: scale(1.1);
+}

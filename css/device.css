@@ -1,0 +1,497 @@
+@media screen and (max-width: 440px) {
+
+    /* 共通 */
+    br {
+        display: none;
+    }
+
+
+    .sp,
+    .sp-br,
+    .sp-block,
+    .sp-h2,
+    .feature-sp-image,
+    .sp-text {
+        display: block;
+    }
+
+
+    #about p,
+    #works p,
+    #no-css p,
+    #works-list p,
+    #message p,
+    .intro p,
+    #work p,
+    #code p {
+        text-align: left;
+        padding: 0 17%;
+        margin: 30px auto;
+        margin-bottom: 32px;
+        font-size: 5vw;
+    }
+
+    summary {
+        font-size: 4.5vw;
+        white-space: nowrap;
+        transform: translateX(10px);
+        margin: 30px auto;
+        color: aquamarine;
+    }
+
+
+
+
+    .sp-block {
+        margin-bottom: 1.5em;
+    }
+
+    h1 {
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    h2 {
+        text-align: center;
+        white-space: nowrap;
+    }
+
+
+    #about,
+    #works,
+    #message,
+    #work,
+    #code {
+        scroll-margin-top: 360px;
+    }
+
+
+    .inner {
+        width: 94%;
+        padding: 0;
+    }
+
+
+    /* ヘッダー */
+
+    #nav-toggle {
+        position: fixed;
+        top: 25px;
+        right: 80px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    #nav-toggle>div {
+        position: relative;
+        width: 36px;
+    }
+
+    #nav-toggle>div span {
+        width: 100%;
+        height: 2px;
+        left: 0;
+        display: block;
+        background: red;
+        position: absolute;
+    }
+
+    #nav-toggle>div span:nth-child(1) {
+        top: 0;
+    }
+
+    #nav-toggle>div span:nth-child(2) {
+        top: 14px;
+    }
+
+    #nav-toggle>div span:nth-child(3) {
+        top: 28px;
+    }
+
+ 
+
+    .scroll {
+        height: auto;
+    }
+
+.sp-box {
+    width: 420px;
+    height: 258px;
+    box-shadow: #000;
+}
+    
+    .header-nav-scroll ul {
+        flex-direction: column;
+        align-items: center;
+      justify-content: space-around;
+      gap: 0;
+    }
+
+
+    .header-nav-scroll .btn a {
+        width: 220px;
+        text-align: center;
+    }
+
+    /* メイン画像 */
+    .hero-title {
+        display: none;
+        animation: none;
+    }
+
+
+
+    .sp img {
+        display: block;
+        width: 100%;
+        height: 390px;
+        margin: 260px 0 80px;
+
+
+    }
+
+    /* 説明画像 */
+
+    .feature-text .pc,
+    .feature-image {
+        display: none;
+    }
+
+    .feature-text .animation {
+        font-size: 1.38rem;
+        font-weight: 500;
+        color: aquamarine;
+        white-space: nowrap;
+        transform: translateX(-30px);
+    }
+
+
+
+    .feature-text .sp-h2 {
+        animation: see 3.5s ease-in-out infinite;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+
+    @keyframes see {
+        0% {
+            opacity: 0.3s;
+            color: #c2c2c2;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1s;
+            color: aqua;
+        }
+    }
+
+    .feature-sp-image img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .feature-text h1 {
+        margin-top: 150px;
+        font-size: 1.8rem;
+    }
+
+    /* ボタン */
+    .another-page .btn a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    /* HTMLの説明ページ */
+    #main-img {
+        display: block;
+        width: 100%;
+        height: 300px;
+        margin: 260px 0 0px;
+    }
+
+
+    #intro-imags::after {
+        justify-content: center;
+        transform: translateY(-50px);
+        animation: RightToLeft 2s;
+    }
+
+    @keyframes RightToLeft {
+        0% {
+            width: 0%;
+            background: #000;
+
+        }
+
+        100% {
+            width: 100%;
+            background: #fff;
+
+        }
+    }
+
+    .work-text img {
+        width: 100%;
+        transform: translateX(calc(-100px + 5px));
+
+    }
+
+    li {
+        margin: 0 0 20px;
+
+    }
+
+    .work-text h1,
+    .work-text h2 {
+        letter-spacing: 5%;
+    }
+
+    
+
+    #code h2 {
+        font-size: 5vw;
+    }
+
+    .modal-img {
+  max-width: 98%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+    /* 説明ページ１ */
+
+    #Work-tools {
+        display: block;
+    }
+
+    .time-images {
+        width: 95%;
+    }
+
+    #Work-tools .time-images img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 10PX 0px 0 10px;
+
+    }
+
+    .time-text {
+        display: none;
+    }
+
+    .time-text-sp {
+        display: block;
+    }
+
+    .time-text-sp p,
+    .contents-blk details p,
+    .contents-blk ol {
+        text-align: left;
+        padding: 0 15%;
+        margin: 30px auto;
+        margin-bottom: 32px;
+        font-size: 5vw;
+    }
+
+    /* 説明ページ２ */
+
+    .analysis-text-pc {
+        display: none;
+    }
+
+    #analysis .inner {
+        display: block;
+        width: 100%;
+        margin: 10px;
+        border-radius: 2px solid #fff;
+    }
+
+
+    .analysis-images,
+    .analysis-text {
+        display: none;
+    }
+
+    .analysis-images-sp,
+    .analysis-text-sp {
+        display: block;
+    }
+
+    .analysis-images-sp img {
+        display: block;
+        width: 100%; 
+        max-width: 100%;
+        height: auto !important;
+        padding: 0 20px 0 0;
+    }
+
+    .analysis-text-sp {
+        text-align: left;
+        width: 100%;
+       
+    }
+
+    .analysis-text-sp h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    #analysis .analysis-text-sp p {
+        text-align: left;
+        padding: 0 10%;
+    }
+
+    #analysis .contents-blk p {
+        text-align: center;
+        font-size: 5vw;
+    }
+    
+    #analysis .contents-blk img {
+        width: 100%;
+        height: 450px;
+        margin: 10px; 
+    }
+    
+/* 説明ページ３ */
+#use {
+    display: block;
+}
+
+#use .use-images {
+    display: none;
+}
+
+#use .use-images-sp {
+    display: block;
+}
+
+#use .use-images-sp img {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+    /* コード説明 */
+#css-title::after {
+    font-size: 4vw;
+}
+
+#about .css-img,
+#about .gimon-img,
+#about .img-hatena,
+#about .style-img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#about .css-text .link-btn  h1 {
+    transform: translateX(-10px);
+    
+}
+
+#about .contents-blk summary {
+    font-size: 5vw;
+    padding: 25px;
+}
+
+
+
+/* cssの説明 */
+#about h3 {
+    display: block;
+    padding: 0 100px;
+}
+
+.pc-link {
+    display: none;
+}
+
+.sp-link {
+    display: block;
+}
+
+.sp-link,
+ .fa-solid fa-arrow-down,
+span{
+    color: #fff;
+    transform: translateX(50px);
+}
+
+.sp-link a {
+   padding: 0 60px;
+   margin: 0;
+   border: 2px solid red;
+    color: aquamarine;
+}
+
+#code .code-collection .wrap-blk {
+    display: unset;
+}
+
+
+#code .code-collection .contents-blk {
+    max-width: 100%;
+
+
+}
+
+
+
+/* ジャバスクリプト */
+
+.toriaezu {
+    font-size: 5vw;
+    padding: 0;
+}
+
+    /* サンプル */
+    .sample-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* フッター */
+
+    
+    #link .link-btn a {
+        font-size: 3.8vw;
+         white-space: nowrap;
+         text-align: center;
+    }
+
+
+    #back .link-btn span,
+    #back .link-btn a {
+        padding: 0 20px 200px 0;
+        font-size: 5vw;
+    }
+
+    #link .link-btn,
+    span {
+        color: aqua;
+    }
+
+
+
+    #go_home img {
+        width: 180px;
+        padding: 0;
+        margin: 0;
+    }
+}

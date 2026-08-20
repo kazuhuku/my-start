@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="description" content="wedデザイナーを目指してhtmlとcssの勉強中">
+    <meta name="keywords" content="web,勉強">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sawarabi+Mincho&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var top = $('.movie').offset().top;
+            var position = top - $(window).height();
+            var position_bottom = top + $('.movie').height();
+            if ($(window).scrollTop() > position && $(window).scrollTop() < position_bottom) {
+                $('').addClass('active');
+            } else {
+                $('').removeClass('active');
+            }
+        })
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/device.css">
+    <title>WEBサイト作成の勉強を振り返るサイトだよ</title>
+</head>
+
+<body>
+
+
+    <header class="scroll">
+        <div class="inner">
+
+
+            <!-- <div id="nav-toggle" class="sp"> -->
+                <!-- <div> -->
+                    <!-- <span></span> -->
+                    <!-- <span></span> -->
+                    <!-- <span></span> -->
+                <!-- </div> -->
+            <!-- </div> -->
+
+
+
+
+            <nav class="header-nav-scroll">
+                <ul>
+                    <li class="btn"><a href="#about">自己紹介</a></li>
+                    <li class="btn"><a href="#works">このページについて</a></li>
+                    <li class="btn"><a href="#message">メッセージ</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+
+    <main>
+
+
+        <div class="hero-title">
+        </div>
+
+        <!-- スマホエリア -->
+        <div class="sp">
+            <img src="images/挨拶３.png">
+        </div>
+
+        <section id="about">
+
+            <div class="inner">
+
+                <h2>自己紹介</h2>
+
+                <p>
+                    WEBデザイナーを目指して勉強中の初心者です!<br class="sp-br"><br>
+                    HTML・CSS・JavaScriptを学びながらサイト制作の<br class="sp-br">学習をしています。<br class="sp-br"><br>
+                    少しずつ学習したことを<br class="sp-br">反映して更新していきたいと考えているので<br class="sp-br">よろしくお願いします！！
+                </p>
+
+                <p>
+                    現在は仮のサイトとして<br class="sp-br">ホームへ戻ったり<br class="sp-br">作成サイトに移動するので精一杯です💦
+
+                    <br class="sp-br">だけど<br>学習を進めていき<br class="sp-br">こんなことが出来る。<br class="sp-br">
+                    こんな機能があるといった紹介などもしていけたら
+                    <br class="sp-br">いいなと思っています。<br class="sp-br"><br>
+
+                    <span class="sp-block"></span>なお、使用する画像は<br class="sp-br">個人的に遊んでいる<br
+                        class="sp-br">VRチャットにて撮影したものやCHATGPTより<br class="sp-br">生成したものを使用させていただいております。<br
+                        class="sp-br"><br>
+
+
+                    <span class="sp-block"></span>あくまでこちらは趣味なので脱線しない程度に<br class="sp-br">使用しますので<br
+                        class="sp-br">よろしくお願いします！
+                </p>
+
+                <p>
+                    このトップページへ<br class="sp-br">戻れるようにボタンを<br class="sp-br">各ページに置いているのでぜひ<br>
+                    使ってみてください。
+                </p>
+
+            </div>
+
+            <!-- <hr> -->
+
+        </section>
+
+        <section id="works">
+
+            <div class="inner">
+
+                <h2>何をしてるの？</h2>
+
+                <P>
+                    ここでは今学習したことを反映させていこうと考えています。<br class="sp-br">
+                    <span class="sp-block"></span>初めての方にとっては、
+                    <ruby>HTML<rt>エイチティエムエル</rt>
+                    </ruby>や
+
+                    <ruby>CSS<rt>シーエスエス</rt>
+                    </ruby>？<br class="sp-br">何かわからないよ？<br class="sp-br">となると思います。<br class="sp-br"><br>
+                    難しいことばかり書いて<br class="sp-br">しまうとブラウザを<br class="sp-br">閉じられそうなので簡単に説明します。<br>
+                </p>
+
+                <p>
+                    <strong>HTML</strong>と呼ばれる部分で<br class="sp-br">内容を編集し、<br
+                        class="sp-br">もっと見やすくするために<strong>CSS</strong>と
+                    組み合わせて<br class="sp-br">wedページを作っています。<span class="sp-block"></span>
+                </p>
+
+                <p>
+                    ...と言っても分かりづらいですよね？💦<br class="sp-br"><br>
+                    いきなりそんなこと<br class="sp-br">言われてもイメージが<br class="sp-br">浮かばないと思います。<br class="sp-br">
+                    なので、イメージしやすいように物に変えて考えみます。<br class="sp-br">
+
+                <details>
+                    <summary>こんな例え方があります<br class="sp-br">(タップorクリックするとテキストが開きます)</summary>
+
+
+                    <p>
+                        </span>家を作ると考えると良い。<br class="sp-br">と聞きます。<br class="sp-br"><br>
+                        <strong>html</strong>は <strong>骨組みや<br class="sp-br">家具の配置</strong>。
+                        <br class="sp-br"><strong>css</strong>は
+                        <strong>内装・デザイン</strong>と<br class="sp-br">言われているそうです。
+                    </P>
+
+                    <p>
+                        では、なぜこのように<br class="sp-br">例えられるのか？<br class="sp-br"><br>
+                        先ほどhtmlは骨組みと<br class="sp-br">家具と例えました。<br class="sp-br"><br>
+                        htmlだけでも文字や画像を<br class="sp-br">wed上に表示させることは出来ます。<span class="sp-block"></span>
+                        これでお家が建ちました。<br class="sp-br">でもこのままだとちょっと<br class="sp-br">あっさりした作りになってます。<span
+                            class="sp-block"></span>
+
+                        試しにcssを使わなかった場合の、このwedページ<br class="sp-br">のリンクを下に準備しました。<br class="sp-br">違いを見てもらおうと
+                        <br class="sp-br">思います。
+                        <span class="sp-block"></span>
+
+                    </p>
+
+                    <section id="no-css">
+
+                        <div class="feature-text">
+                            <p class="animation">※スマホとPCで少し仕様を変えてますが動きます</p>
+                            <h2 class="pc">↓触れると文字が浮かぶのでカーソルを置いてみてね！</h2>
+                            <h2 class="sp-h2">↓画像をタップすると別ページに飛びます！</h2>
+
+
+                            <div class="feature-image">
+                                <h1 class="btn"><a href="pages/No-css.html">ここをクリックしてみてね！</a>
+                                </h1>
+                            </div>
+
+                            <div class="feature-sp-image">
+                                <a href="pages/No-css.html"><img src="images/work.png"></a>
+                            </div>
+                        </div>
+                    </section>
+                        <P>
+                            どうでしたか？<br class="sp-br">PC表示では文章がすべて左に寄っていたり、<br class="sp-br">テキストの色が統一されていたと思います。<br class="sp-br">
+                                
+                            スマホ上ではスマホ表示用のCSSがないため、<br class="sp-br">Wed側が自動で判断した<br class="sp-br">表示方法に置き換わって<br class="sp-br">いました。
+                                <span class="sp-block"></span><br>
+                            他にも背景が白かったり<br class="sp-br">画像のサイズや位置が固定されていたり上げると<br class="sp-br">キリがありません...。<span class="sp-block"></span><br>
+    
+                            これが家だとして、<br class="sp-br">住みにくいと思いませんか？<br class="sp-br"><br>
+                            壁紙や照明の明るさを<br class="sp-br">変えると部屋のイメージがかなり変わるように、<br class="sp-br">
+                            cssは住みやすくおしゃれな家に仕立てる役割を<br class="sp-br">持っているのです。
+                        </P>
+                </details>
+            </div>
+        </section>
+
+        <section id="works-list">
+            <div class="inner">
+            <div class="contents-blk">
+
+                <h2>ここからが本題です</h2>
+
+                <P>
+                    ここからはタイトル通りwedデザイナーを目指す<br class="sp-br">ために学習したことを<br class="sp-br">まとめて行こうと思います。
+                </P>
+
+                <P>
+                    しかしこのまま長々と<br class="sp-br">記述してしまうとどんどん長くなっていき、<br class="sp-br">見辛くなってしまうかも
+                       <br class="sp-br">しれません💦<span class="sp-block"></span><br>
+                    まだまだ見切り発車な<br class="sp-br">ところがあるのでUI設定（レイアウトや操作を<br class="sp-br">しやすくするための設定）
+                    がちゃんと出来ていない<br class="sp-br">ので…💦<span class="sp-block"></span><br>
+                    そこで今回はリンクを<br class="sp-br">設定して紹介ページに<br class="sp-br">飛んでもらおうと<br class="sp-br">思います！
+                </P>
+
+                <P>
+                    今回は三つのリンクボタンを用意しました。<br class="sp-br"><br>
+                    ここをクリックすると<br class="sp-br">私が指定したそれぞれの<br class="sp-br">ページへ移動することが<br class="sp-br">出来るようになって
+                      <br  class="sp-br">います。<span class="sp-block"></span><br>
+                    それぞれタイトルに沿って説明しています。
+                </P>
+
+
+                <ul class="another-page">
+
+                    <li class="btn">
+                        <a href="pages/html-guide.html">
+                            htmlって何？
+                        </a>
+                    </li>
+
+                    <li class="btn">
+                        <a href="pages/css-guide.html">
+                            cssって何？
+                        </a>
+                    </li>
+
+                    <li class="btn">
+                        <a href="pages/JavaScript-guide.html">
+                            JavaScript<br class="sp-br">（ジャバスクリプト）<br class="sp-br">って何？
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </section>
+
+        <section id="message">
+            <div class="inner">
+
+                <!-- <hr> -->
+
+                <h2>メッセージ</h2>
+
+                <p>
+                    感想やご意見を頂けると励みになります！！<br>
+                    よろしくお願いします！
+                </p>
+
+                <form method="post" action="https://formspree.io/f/mvkpveoo">
+                    <table class="message">
+
+                        <tr>
+                            <th><label for="your-name" class="your-name-c">ニックネーム</label></th>
+                            <td><input type="text" name="ニックネーム" id="your-name"></td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="message">感想・ご意見など</label></th>
+                            <td><textarea name="感想・ご意見など" id="message"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p class="notes"></p>
+                                <input type="submit" value="送信する" id="btn-submit">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <nav id="go_home">
+            <a href="index.html">
+                <img src="images/go_home_アイコン２.png" alt="ホームへ戻る">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

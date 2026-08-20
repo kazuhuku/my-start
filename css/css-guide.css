@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* -------------------
+CSSについて
+------------------- */
+
+#about {
+    scroll-margin-top: 290px;
+}
+
+#work,
+#code {
+    scroll-margin-top: 80px;
+}
+
+
+
+
+
+#intro .color {
+    color: #13bfa8;
+}
+
+#about .css-img {
+    width: 50%;
+    height: 200px;
+    padding: 20px;
+    margin: 20px 10%;
+    justify-content: center;
+    background: url(../images/CSS調べ.png) center center / cover no-repeat;
+    border-radius: 20px;
+}
+
+
+#main-img {
+    box-sizing: border-box;
+    position: relative;
+    background: url(../images/main.png) center top / cover no-repeat;
+    width: 80%;
+    height: 600px;
+    padding: 80px 10px 10px 10px;
+    border: 3px solid #fff;
+    margin: 80px auto 10px;
+}
+
+#css-title::after {
+    display: flex;
+    justify-content: flex-end;
+    top: 100px;
+    font-size: 4rem;
+    font-weight: 500;
+    color: palegreen;
+    margin: auto;
+    z-index: 1;
+    content: "css=Cascading Style Sheetsについて";
+}
+
+#main-img{
+    animation: RightToLeft 2s;
+}
+
+@keyframes RightToLeft {
+    0% {
+        width: 0%;
+        background: #000;
+        
+    }
+
+    100% {
+        width: 80%;
+        background: #fff;
+        
+    }
+}
+
+
+
+
+
+
+#css-title {
+    transform: translateY(-50px);
+}
+
+
+
+.link-btn .color-w {
+    color: #fff;
+    border-style: dashed;
+}
+
+.link-btn .color-w:hover {
+    color: #a3e635;
+}
+
+.peactice p {
+    color: #a3e635;
+}
+
+.color-red {
+    color: red;
+}
+
+.background-red {
+    background: red;
+    color: #fff;
+}
+
+.gimon-img {
+    background: url(../images/gimon.png) no-repeat center top / cover;
+    border-radius: 20px;
+    width: 50%;
+    height: 35vh;
+    padding: 0 0 30px;
+    margin: 20px 10%;
+}
+
+.em-color-g {
+    color: palegreen;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.em-color-w {
+    color: palegreen;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.img-hatena {
+    background: url(../images/hatena.png) no-repeat center center / cover;
+    border-radius: 10px;
+    width: 50%;
+    height: 30vh;
+    padding: 0 0 80px;
+    margin: 20px 10%;
+}
+
+.style-img {
+    background: url(../images/yorokobu.png) no-repeat center center / cover;
+    border-radius: 10px;
+    width: 50%;
+    height: 30vh;
+    padding: 100px 0;
+    margin: 20px 10%;
+}
+
+/* -------------------
+HTMLでテキストを大きくすることの説明 
+------------------- */
+
+.sample-box {
+    width: 700px;
+    margin: 50px auto;
+    border: 2px solid white;
+    padding: 30px;
+}
+
+.hello-big {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 0 0;
+    text-align: center;
+    box-sizing: border-box;
+    color: aquamarine;
+}
+
+.hello-big strong {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 0 0;
+    text-align: center;
+    box-sizing: border-box;
+    color: aquamarine;
+}
+
+.contens-blk {
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+/* pc表示 */
+.pc-link {
+    display: block;
+    color: aquamarine;
+}
+
+
+
+
+
+/* 最後まとめ */
+
+#code .code-collection .wrap-blk {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+#code .code-collection .contents-blk {
+  position: relative;
+  width: auto;
+  min-height: 200px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.code-collection .contents-blk {
+    border: 2px solid #a3e635;
+
+}
+
+.code-collection .contents-blk:first-child .example{
+    color:red;
+}
+
+
+
+.code-collection .contents-blk:nth-child(2) .example{
+    background:red;
+}
+
+.code-collection .contents-blk:nth-child(3) .example{
+     font-family: sans-serif system-ui;
+}
+
+.code-collection .contents-blk:nth-child(4) .example{
+     font-size: 30px;
+}

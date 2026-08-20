@@ -1,0 +1,268 @@
+@charset "utf-8";
+
+/* -------------------
+htmlについて紹介ページ
+-------------------*/
+
+#about,
+#work,
+#code {
+    scroll-margin-top: 80px;
+}
+
+
+#main-img {
+    box-sizing: border-box;
+    position: relative;
+    background: url(../images/HTML.png) center center / cover no-repeat;
+    width: 80%;
+    height: 600px;
+    padding: 80px 10px 10px 10px;
+    border: 3px solid #fff;
+    margin: 80px auto 10px;
+}
+
+#intro-imags::after {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 4rem;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.9);
+    color: palegreen;
+    margin: auto;
+    z-index: 1;
+    content: "HTMLについて";
+}
+
+#main-img{
+    animation: RightToLeft 2s;
+}
+
+@keyframes RightToLeft {
+    0% {
+        width: 0%;
+        background: #000;
+        
+    }
+
+    100% {
+        width: 80%;
+        background: #fff;
+        
+    }
+}
+
+.em-color-g {
+    color: palegreen;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.em-color-w {
+    color: palegreen;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+
+.intro {
+    padding: 80px 0 0 0;
+}
+
+
+.ruby-text h1 {
+    color: #fff;
+}
+
+.work-text img {
+
+    width: 45%;
+    max-height: 320px;
+    margin: 0 25%;
+
+}
+
+.text-big {
+    color: palegreen;
+}
+
+.text-big :active {
+    color: palegoldenrod;
+    font-weight: 500;
+}
+
+
+.text-big li a {
+    font-size: 3rem;
+}
+
+
+
+.list {
+    width: 300px;
+}
+
+
+/* -------------------
+memoは写真をクリックしたら大きくなるようにする　今は大きさだけ当てとく
+-------------------*/
+#work .zoomable-img{
+    width: 50%;
+    height: 300px;
+    margin: 0 25%;
+    cursor: pointer;
+  transition: opacity 0.2s ease;
+  border-radius: 8px;
+}
+
+.zoomable-img:hover {
+  opacity: 0.8;
+}
+
+/* 拡大時に背景を暗くするオーバーレイ */
+.modal-overlay {
+  display: none; /* 初期状態は非表示 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* 拡大表示される画像 */
+.modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 閉じるボタン */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+/* -------------------
+ここは作業のしやすさについて説明してるHTML 
+-------------------*/
+
+#Work-tools {
+    display: flex;
+}
+
+.time-images {
+    width: 50%;
+}
+
+.time-images img {
+    width: 100%;
+    height: auto;
+    margin: 100px 0 0 10px;
+}
+
+.time-text {
+    width: 50%;
+    padding: 90px 0 90px 100px;
+
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.time-text.contents-blk {
+    color: #cfd5d8;
+    margin: 80px 0 0;
+    display: flex;
+}
+
+#Work-tools h2 {
+    color: #a3e635;
+}
+
+
+
+/* -------------------
+ここはcodeの読みやすさについて説明してるHTML 
+-------------------*/
+
+#analysis .inner {
+    display: flex;
+}
+
+.analysis-images {
+    width: 80%;
+    height: 50vh;
+    border: 100px;
+    margin: 100px 0px 0 0;
+    justify-content: right;
+    background: url(../images/Efficiency.png) center center / cover no-repeat;
+}
+
+.analysis-text {
+    width: 50%;
+    padding: 90px 0 90px 100px;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 1.3;
+}
+
+#analysis h2 {
+    color: #a3e635;
+}
+
+#analysis .contents-blk p {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.analysis-text-pc {
+    display: block;
+    margin: 0 20px;
+}
+
+.b {
+    color: #7FBFFF;
+}
+
+.g {
+    color: greenyellow;
+}
+
+.orange {
+    color: orange;
+}
+
+.w {
+    color: white;
+}
+
+/* -------------------
+使いやすさについてのHTML
+------------------- */
+.use-images {
+    background: url(../images/use.png) left/ cover no-repeat;
+    height: 30vh;
+    padding: 100px 0 100px 0;
+    margin: 0 0 50px 0;
+}
+
+#use h2 {
+    color: #a3e635;
+}
+
+
+
+
+

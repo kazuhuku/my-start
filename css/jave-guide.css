@@ -1,0 +1,124 @@
+#about,
+#work,
+#code {
+    scroll-margin-bottom: 400px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#main-img {
+    box-sizing: border-box;
+    position: relative;
+    background: url(../images/jave.png) center top / cover no-repeat;
+    width: 80%;
+    height: 600px;
+    padding: 80px 10px 10px 10px;
+    border: 3px solid #fff;
+    margin: 80px auto 10px;
+}
+
+#JavaScript-title::after {
+    display: flex;
+    justify-content: flex-end;
+    top: 100px;
+    font-size: 4rem;
+    font-weight: 500;
+    color: palegreen;
+    margin: auto;
+    z-index: 1;
+    content: "JavaScriptについて";
+}
+
+#JavaScript-title {
+    transform: translateY(-50px);
+}
+
+
+#main-img{
+    animation: RightToLeft 2s;
+}
+
+@keyframes RightToLeft {
+    0% {
+        width: 0%;
+        background: #000;
+        
+    }
+
+    100% {
+        width: 80%;
+        background: #fff;
+        
+    }
+}
+
+#intro ruby,
+.em-color-g {
+    color: palegreen;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+#about .zoomable-img{
+    width: 50%;
+    height: 300px;
+    margin: 0 25%;
+    cursor: pointer;
+  transition: opacity 0.2s ease;
+  border-radius: 8px;
+}
+
+.zoomable-img:hover {
+  opacity: 0.8;
+}
+
+/* 拡大時に背景を暗くするオーバーレイ */
+.modal-overlay {
+  display: none; /* 初期状態は非表示 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* 拡大表示される画像 */
+.modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 閉じるボタン */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
