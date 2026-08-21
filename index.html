@@ -16,18 +16,28 @@
 
 
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript">
-        $(window).scroll(function () {
-            var top = $('.movie').offset().top;
-            var position = top - $(window).height();
-            var position_bottom = top + $('.movie').height();
-            if ($(window).scrollTop() > position && $(window).scrollTop() < position_bottom) {
-                $('').addClass('active');
-            } else {
-                $('').removeClass('active');
-            }
-        })
-    </script>
+    
+    <script>
+    $(window).on('load', function() {
+  // URLに #works-list が含まれているか確認
+  if (window.location.hash === '#works-list') {
+    var windowWidth = $(window).width();
+    var targetPosition;
+
+    if (windowWidth <= 440) {
+      // スマホの場合の位置（例：少し上めにずらすなど）
+      targetPosition = $('#works-list').offset().top - 290; 
+    } else {
+      // PCの場合の位置
+      targetPosition = $('#works-list').offset().top - 80; // ヘッダーの高さ分引くなど
+    }
+
+    // 指定した位置へスクロール
+    $('html, body').animate({ scrollTop: targetPosition }, 0);
+  }
+});
+
+</script>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/device.css">
@@ -224,7 +234,7 @@
                     それぞれタイトルに沿って説明しています。
                 </P>
 
-
+                
                 <ul class="another-page">
 
                     <li class="btn">
