@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="description" content="wedデザイナーを目指してhtmlとcssの勉強中">
+  <mete name="keywords" content="web,勉強">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5d7293c0ee.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/jave-guide.css">
+    <link rel="stylesheet" href="../css/device.css">
+    <title>WEBサイト作成の勉強を振り返るサイトだよ</title>
+</head>
+
+
+<header class="scroll">
+  <div class="inner">
+
+
+    <!-- <div id="nav-toggle" class="sp"> -->
+    <!-- <div> -->
+    <!-- <span></span> -->
+    <!-- <span></span> -->
+    <!-- <span></span> -->
+    <!-- </div> -->
+    <!-- </div> -->
+
+
+    <nav class="header-nav-scroll">
+      <ul>
+        <li class="btn"><a href="#about">JavaScriptとは</a></li>
+        <li class="btn"><a href="#work">作り方</a></li>
+        <li class="btn"><a href="#code">ソースコード</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<body>
+
+
+
+
+
+  <div id="main-img">
+    <section id="JavaScript-title">
+    </section>
+  </div>
+  
+
+  <section id="intro">
+    <div class="inner">
+      <p>
+        ここでは、<em class="em-color-g"><ruby>JavaScript<rt>ジャバスクリプト</rt></ruby></em>
+        について触れていきたいと思います。<br>
+        JavaScriptは奥が深く、一から作成することもあるのでハズレやこれが正解などはなく私もまだまだ勉強中です。<br>
+        このページでは、自分も新しい知識を学んだらなるべく更新していきたいと考えています。<br>
+        浅い部分も目立つと思いますがよろしくお願いします!
+      </p>
+
+      <h2>JavaScriptって？</h2>
+      <P>
+        <em class="em-color-g"><ruby>JavaScript<rt>ジャバスクリプト</rt></ruby></em>は、
+        HTMLとCSSと組み合わせることで動きのあるページを作る<br>プログラミング言語です。<br>
+        まとめてしまうと<em class="em-color-g">動作や仕組み</em>を担当する箇所です。<br>
+        でも、説明だけでは分からないので動作を見てみましょう。
+      </P>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="inner">
+      <h2>JavaScriptが得意な事</h2>
+      <figure class="JavaScript-img"></figure>
+      <div class="JavaScript-text">
+        <p>
+          まずはJavaScriptの動きを見てみましょう。HTMLについてお話したページにもありました。<br>
+          今回は画像を変更しましたが、同じように動きます。<br>
+          クリックorタップすると画像が拡大されます。<br>
+          これはクリックもしくはタップされたら画像を拡大するという動作をJavaScriptで処理をしています。<br>
+        </p>
+        <img class="zoomable-img" src="../images/VRChat色調補正２.png">
+
+
+        <div class="modal-overlay" id="imageModal">
+          <span class="close-btn">&times;</span>
+          <img class="modal-img" id="modalImg" alt="拡大画像">
+        </div>
+        <p>
+          他にも組み合わせ方によっては、多くのことができます。<br>
+          何せ、自分で動きを一から作れるので自由に組み立てられるからです。<br>
+          まずは、どう動かしたいのか決める。その後、動かすためにはどうすればいいのか調べる。<br>
+          そんな場面もあると聞かされたくらいです。
+        </p>
+
+        <p>
+          じゃあ、ページを開いた時に画像がスライドしたのは違うの？<br>
+          と思った方もいるでしょう。<br>
+          簡易的なアニメーションならCSSでも作ることはできます。<br>
+          例えば、マウスカーソルが触れるとクリックボタンが点滅する、<br>
+          PowerPointのようにスライドして見えるように作ることは可能です。
+        </p>
+
+        <details>
+          <summary>
+            難しいスクリプトなんて作れないよ！
+          </summary>
+          <p>自分の思うようなスクリプトなんて組めない…<br>
+            と感じている人もいるでしょう。（私もそうです）<br>
+            そこで活躍するのが<ruby>
+              <rb>jQuery</rb>
+              <rt>ジェイクエリー</rt>
+            </ruby>
+            というJavaScriptです。<br>
+            このjQueryを乱暴に解釈するなら、<em class="em-color-g">アシスト機能</em>だと考えてください。<br>
+            jQueryを追加することで、大抵は作りたいコードを記述するだけで動くようになります。<br>
+            <small>※jQuery単体でJavaScriptは動きません。</small>
+          </p>
+        </details>
+
+        <details>
+          <summary>どんな書き方をするの？</summary>
+          <p>では動きを見てみましょう！<br>
+            今回は計算結果が表示される。というJavaScriptでやってみましょう。<br>
+            １+１＝２と計算するスクリプトを作ってみます。<br>
+            まずはスクリプトのタグを置きます。<br>
+            <strong class="color">＜script＞＜/script＞</strong>と記述し必要な動作を中に入れていきます。<br>
+            数値を入れるだけでは計算することはできないので、数値をいれるための箱を用意します。<br>
+            今回は<strong class="color">let a</strong>と <strong class="color">let b</strong>
+            <strong class="color">let c</strong>という箱を用意します。<br>
+            この<strong class="color">let</strong>という部分は宣言です。これを使用することで数値を代入することができるようになります。<br>
+            変数や代入等説明すると長くなるので、今回は数値を入れるための箱がいることを覚えてください。<br>
+            ちなみに、宣言する単語はletではなくても動きます。<br>
+          </p>
+
+          <p>
+            では、宣言したaとbに数値をいれます。<br>
+            a = 1　b = 1と入力します。考え方としては数学の代入と同じです。<br>
+            次に計算式を記述します<br>
+            c = a + bと記述します。これでaとbを足した結果がcとなります。<br>
+            最後に計算結果を表示する記述をいれます。<br>
+            これが無くても計算自体はできますが、結果を表示するために今回は入れます。<br>
+            alert(c)と入力します。ではここまでをまとめて記述します。<br>
+
+            ＜script＞<br>
+              let a, b, c;<br>
+
+              a = 1;<br>
+              b = 1;<br>
+
+              c = a + b;<br>
+              alert(c);<br>
+            ＜/script＞<br>
+            では、結果をみてみましょう！<br>
+            <a href="../pages/addition.html"><button>クリックしてね！</button></a>
+          </p>
+        </details>
+
+        <div class="last">
+          <P>今回は動作をみるだけの記述でしたが本来であれば、目的に応じてスクリプトを作成します。<br>
+            求めているコードを作成して公開していらっしゃる方々もいますので使わせてもらうこともあれば、<br>
+            そのコードをベースに変更したり、一から作成することもあります。<br>
+            興味を持たれたら、ぜひ、閲覧してみてください。
+
+          </P>
+        </div>
+        
+
+        <footer>
+          <div id="link">
+            <div class="link-btn"><a href="../index.html#works-list">
+                <i class="fa-solid fa-arrow-left"></i><span>ここをクリックするとページ案内へ移れます！</span></a>
+            </div>
+          </div>
+
+
+          <nav id="go_home">
+            <a href="../index.html">
+              <img src="../images/go_home_アイコン２.png" alt="ホームへ戻る">
+            </a>
+
+          </nav>
+        </footer>
+
+
+        <script src="../JavaScript.css/JavaScript_1.js"></script>
+
+</body>
+
+</html>
